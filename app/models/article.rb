@@ -1,6 +1,9 @@
 # frozen_string_literal: true
 
+# Blog Article Model.
 class Article < ApplicationRecord
+  include Visible
+
   has_many :comments
 
   validates :title, presence: true
