@@ -11,8 +11,8 @@ module Visible
   end
 
   class_methods do
-    def public_cound
-    where(status: 'public').count
+    def public_count
+      where(status: 'public').count
     end
   end
 
